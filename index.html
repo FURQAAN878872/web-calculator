@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="day-theme">
+    <div class="calculator-container">
+        <div class="theme-toggle">
+            <button id="theme-switcher"><i class="fas fa-moon"></i></button>
+        </div>
+        
+        <div class="mode-switch">
+            <button class="mode-btn active" id="standard-mode">Standard</button>
+            <button class="mode-btn" id="scientific-mode">Scientific</button>
+        </div>
+        
+        <div class="display">
+            <div class="previous-operand"></div>
+            <div class="current-operand">0</div>
+        </div>
+        
+        <div class="buttons standard-buttons">
+            <button class="span-2" id="clear">AC</button>
+            <button id="delete">DEL</button>
+            <button class="operator" value="/">÷</button>
+            
+            <button value="7">7</button>
+            <button value="8">8</button>
+            <button value="9">9</button>
+            <button class="operator" value="*">×</button>
+            
+            <button value="4">4</button>
+            <button value="5">5</button>
+            <button value="6">6</button>
+            <button class="operator" value="-">-</button>
+            
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button class="operator" value="+">+</button>
+            
+            <button class="span-2" value="0">0</button>
+            <button value=".">.</button>
+            <button class="operator" id="equals">=</button>
+        </div>
+        
+        <div class="buttons scientific-buttons">
+            <button value="sin">sin</button>
+            <button value="cos">cos</button>
+            <button value="tan">tan</button>
+            <button value="log">log</button>
+            <button value="ln">ln</button>
+            
+            <button value="(">(</button>
+            <button value=")">)</button>
+            <button value="π">π</button>
+            <button value="e">e</button>
+            <button value="^">^</button>
+            
+            <button value="sqrt">√</button>
+            <button value="fact">x!</button>
+            <button value="pow10">10^x</button>
+            <button value="abs">|x|</button>
+            <button value="mod">mod</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
